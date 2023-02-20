@@ -1,3 +1,14 @@
 go mod init module_name -> initialize a go module 
 go run file_name -> compiles and executes go file
 go env GOPATH -> to see the current GOPATH
+go get -u package_name
+go build buildFolder -> building the app
+go run filename.go -> runs 'filename' file 
+go mod tidy -> https://go.dev/ref/mod#go-mod-tidy
+go mod verify -> https://go.dev/ref/mod#go-mod-verify
+go list  all -> list all modules and packages in current workspace
+go list -m all -> list all modules in current workspace
+go mod why modulename -> module which are dependent on modulename
+go mod graph -> dependencies of modules 
+go mod vendor -> brings all dependencies in vendor folder from cache
+go run -mod=vendor main.go -> first look for dependencies in vendor then in cache or web
